@@ -52,7 +52,7 @@
 
             var streamId = GetStreamId(streamName);
 
-            IList<IEvent> martenEvents;
+            IReadOnlyList<IEvent> martenEvents;
             StreamState streamState;
             using(var session = _getDocumentSession())
             {
